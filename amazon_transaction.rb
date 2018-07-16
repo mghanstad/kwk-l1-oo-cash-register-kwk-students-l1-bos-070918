@@ -17,6 +17,8 @@ class AmazonTransaction
     if @discount == 20
       @total = total - @total*@discount/100.to_i
       "After the discount, the total comes to $#{total}."
+    else
+      "There is no discount to apply"
     end
   end
 
